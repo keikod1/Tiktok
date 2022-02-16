@@ -23,7 +23,7 @@ class ImageViewCell: UICollectionViewCell {
         addSubview(imageTiktok)
         imageTiktok.snp.makeConstraints { make in
             make.top.equalToSuperview()
-            make.bottom.equalToSuperview().offset(-20)
+            make.bottom.equalToSuperview()
             make.height.equalToSuperview()
             make.width.equalToSuperview()
         }

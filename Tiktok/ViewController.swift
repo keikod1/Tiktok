@@ -171,7 +171,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
        
-        return CGSize(width: (view.frame.width), height: (view.frame.width / 0.6))
+        return CGSize(width: (view.frame.width), height: (view.frame.height))
        
         }
     
@@ -186,8 +186,6 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageViewCell", for: indexPath) as! ImageViewCell
         cell.backgroundColor = .black
         cell.imageTiktok.image = tiktok[index]
-       
-       
         return cell
     }
     
